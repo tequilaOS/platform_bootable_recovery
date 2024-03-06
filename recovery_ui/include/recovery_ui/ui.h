@@ -272,7 +272,11 @@ class RecoveryUI {
       const std::function<int(int, bool)>& key_handler) = 0;
 
   virtual int MenuItemHeight() const {
-    return 1;
+    return false;
+  }
+
+  virtual bool IsWearable() {
+    return false;
   }
 
   // Set whether or not the fastbootd logo is displayed.
